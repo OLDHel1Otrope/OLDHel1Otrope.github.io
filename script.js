@@ -10,7 +10,7 @@ camera.position.z = 5;
 // Create renderer and add it to the DOM
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
+document.getElementById("canvas").appendChild(renderer.domElement);
 
 // Add a simple cube to the scene
 const geometry = new THREE.BoxGeometry();
